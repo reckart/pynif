@@ -91,9 +91,14 @@ You will obtain the NIF representation as a string:
 
 .. code:: turtle
 
+    @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+    @prefix nif: <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core#> .
+    @prefix itsrdf: <http://www.w3.org/2005/11/its/rdf#> .
+    @prefix dcterms: <http://purl.org/dc/terms/>
+
    <http://freme-project.eu> a nif:ContextCollection ;
        nif:hasContext <http://freme-project.eu/doc32> ;
-       ns1:conformsTo <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core/2.1> .
+       dcterms:conformsTo <http://persistence.uni-leipzig.org/nlp2rdf/ontologies/nif-core/2.1> .
 
    <http://freme-project.eu/doc32> a nif:Context,
            nif:OffsetBasedString ;
